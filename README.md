@@ -8,9 +8,9 @@ The goal is to understand how real systems are shaped at a smaller scale: how th
 
 All projects are located in the `labs/` directory. Each module focuses on a specific pillar of the Linux Mastery roadmap.
 
-- **[`01-procfs`](labs/01-procfs)**: System observation via the `/proc` pseudo-filesystem and telemetry parsing.
-- **[`02-inotify`](labs/02-inotify)**: Event-driven reaction using the Linux `inotify` subsystem for real-time monitoring.
-- **[`03-signals`](labs/03-signals)**: Process governance, lifecycle management, and graceful shutdown implementation.
+- **[`01-procfs`](labs/01-procfs/README.md)**: System observation via the `/proc` pseudo-filesystem and telemetry parsing.
+- **[`02-inotify`](labs/02-inotify/README.md)**: Event-driven reaction using the Linux `inotify` subsystem for real-time monitoring.
+- **[`03-signals`](labs/03-signals/README.md)**: Process governance, lifecycle management, and graceful shutdown implementation.
 
 ## How To Use This Repo
 
