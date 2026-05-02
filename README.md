@@ -1,0 +1,24 @@
+# Go Systems Lab
+
+Go Systems Lab is a dedicated sandbox for learning Linux systems programming through small, focused Go projects. Each module targets a practical kernel or system-level concept, starting with system observation and moving through event-driven monitoring and process governance.
+
+The goal is to understand how real systems are shaped at a smaller scale: how the kernel exposes state, how processes react to filesystem events, how signal-based communication works, and how Go's concurrency model interacts with Linux primitives.
+
+## Repository Structure
+
+All projects are located in the `labs/` directory. Each module focuses on a specific pillar of the Linux Mastery roadmap.
+
+- **[`01-procfs`](labs/01-procfs)**: System observation via the `/proc` pseudo-filesystem and telemetry parsing.
+- **[`02-inotify`](labs/02-inotify)**: Event-driven reaction using the Linux `inotify` subsystem for real-time monitoring.
+- **[`03-signals`](labs/03-signals)**: Process governance, lifecycle management, and graceful shutdown implementation.
+
+## How To Use This Repo
+
+Start with the lab directory for the project you want to inspect. Each one contains a `main.go` that demonstrates a specific concept and can be run from the repository root.
+
+The module can also be checked as a whole:
+
+```bash
+go mod tidy
+go test ./...
+```
