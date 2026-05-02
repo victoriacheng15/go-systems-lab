@@ -29,31 +29,36 @@ sudo go run labs/01-procfs/main.go --power --live
 ```
 
 ## 📖 Reference: Key System Virtual Files
-...
 
 The `/proc` and `/sys` filesystems are windows into the kernel and hardware. Below are the most critical files for system observability:
 
 ### System-wide Health (via `/proc`)
+
 - **`/proc/loadavg`**: System load averages for the last 1, 5, and 15 minutes. Represents the "run-queue" depth.
 - **`/proc/uptime`**: Total seconds the system has been running and idle.
 - **`/proc/meminfo`**: Detailed breakdown of memory usage (Total, Free, Available, Buffers, Cached).
 
 ### CPU & Performance (via `/proc`)
+
 - **`/proc/stat`**: Cumulative counters (ticks) for CPU time spent in user, system, idle, and wait states. Used to calculate CPU usage %.
 - **`/proc/interrupts`**: Tracks how hardware events (like network packets) are distributed across CPU cores.
 
 ### Networking (via `/proc/net`)
+
 - **`/proc/net/dev`**: Receive/Transmit statistics (bytes, packets, errors) for every network interface.
 - **`/proc/net/tcp` & `/proc/net/udp`**: Live tables of all open network sockets and their states.
 
 ### Power & Hardware (via `/sys`)
+
 - **`/sys/class/powercap/intel-rapl/intel-rapl:0/energy_uj`**: Cumulative CPU package energy in microjoules. Used by tools like Kepler for GreenOps attribution.
 
 ### Storage & I/O (via `/proc`)
+
 - **`/proc/diskstats`**: Cumulative I/O statistics for each disk device (reads, writes, time spent in I/O).
 - **`/proc/mounts`**: The authoritative list of all currently mounted filesystems.
 
 ### Process Analysis (The `self` link)
+
 - **`/proc/self/`**: A magic symlink to the directory of the process currently accessing it.
 - **`/proc/self/fd/`**: List of all open file descriptors (useful for debugging "Too many open files").
 - **`/proc/self/limits`**: The soft and hard resource limits applied to the process.

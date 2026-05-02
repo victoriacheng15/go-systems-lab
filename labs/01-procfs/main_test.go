@@ -77,16 +77,16 @@ func TestParseCPUSamples(t *testing.T) {
 
 func TestParseNetSamples(t *testing.T) {
 	tests := []struct {
-		name  string
-		input string
-		iface string
+		name   string
+		input  string
+		iface  string
 		wantRX uint64
 		wantTX uint64
 	}{
 		{
-			name:  "valid net dev",
-			input: "Inter-|   Receive                                                |  Transmit\n face |bytes    packets errs drop fifo frame compressed multicast|bytes    packets errs drop fifo colls carrier compressed\n  eth0: 1000 10 0 0 0 0 0 0 2000 20 0 0 0 0 0 0",
-			iface: "eth0",
+			name:   "valid net dev",
+			input:  "Inter-|   Receive                                                |  Transmit\n face |bytes    packets errs drop fifo frame compressed multicast|bytes    packets errs drop fifo colls carrier compressed\n  eth0: 1000 10 0 0 0 0 0 0 2000 20 0 0 0 0 0 0",
+			iface:  "eth0",
 			wantRX: 1000,
 			wantTX: 2000,
 		},
@@ -114,11 +114,11 @@ func TestParseNetSamples(t *testing.T) {
 
 func TestParseMemInfo(t *testing.T) {
 	tests := []struct {
-		name           string
-		input          string
-		limit          int
-		wantInOutput   string
-		wantLineCount  int
+		name          string
+		input         string
+		limit         int
+		wantInOutput  string
+		wantLineCount int
 	}{
 		{
 			name:          "valid meminfo",
