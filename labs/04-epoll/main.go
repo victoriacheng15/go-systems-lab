@@ -119,10 +119,10 @@ func runServer(port int, stop <-chan struct{}) error {
 					Fd:     int32(cfd),
 				}
 				syscall.EpollCtl(epfd, syscall.EPOLL_CTL_ADD, cfd, clientEvent)
-				
+
 				// Initialize connection context
 				connections[cfd] = &connContext{state: StateHandshake}
-				
+
 				// Send Banner (the start of the handshake)
 				syscall.Write(cfd, []byte("SERVER_READY\n"))
 				fmt.Printf("[%d] NEW CONNECTION -> State: Handshake\n", cfd)

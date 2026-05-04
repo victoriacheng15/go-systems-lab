@@ -11,7 +11,7 @@ import (
 
 func TestEpollHandshake(t *testing.T) {
 	stop := make(chan struct{})
-	
+
 	// Start server on a dynamic port
 	listener, err := net.Listen("tcp", "localhost:0")
 	if err != nil {
