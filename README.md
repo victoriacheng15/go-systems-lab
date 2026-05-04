@@ -11,6 +11,7 @@ All projects are located in the `labs/` directory. Each module focuses on a spec
 - **[`01-procfs`](labs/01-procfs/README.md)**: System observation via the `/proc` pseudo-filesystem and telemetry parsing.
 - **[`02-inotify`](labs/02-inotify/README.md)**: Event-driven reaction using the Linux `inotify` subsystem for real-time monitoring.
 - **[`03-signals`](labs/03-signals/README.md)**: Process governance, lifecycle management, and graceful shutdown implementation.
+- **[`04-epoll`](labs/04-epoll/README.md)**: High-performance network orchestration and stateful event loops.
 
 ## How To Use This Repo
 
