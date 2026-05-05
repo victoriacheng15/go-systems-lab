@@ -13,6 +13,7 @@ All projects are located in the `labs/` directory. Each module focuses on a spec
 - **[`03-signals`](labs/03-signals/README.md)**: Process governance, lifecycle management, and graceful shutdown implementation.
 - **[`04-epoll`](labs/04-epoll/README.md)**: High-performance network orchestration and stateful event loops.
 - **[`05-resource-isolation`](labs/05-resource-isolation/README.md)**: Kernel-level isolation via Namespaces and Cgroups v2 governance.
+- **[`06-workflow`](labs/06-workflow/README.md)**: The Systems Capstone, an event-driven orchestrator integrating inotify, cgroups, and telemetry.
 
 ## How To Use This Repo
 
