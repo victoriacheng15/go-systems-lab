@@ -16,6 +16,7 @@ All projects are located in the `labs/` directory. Each module focuses on a spec
 - **[`06-workflow`](labs/06-workflow/README.md)**: The Systems Capstone, an event-driven orchestrator integrating inotify, cgroups, and telemetry.
 - **[`07-seccomp-capabilities`](labs/07-seccomp-capabilities/README.md)**: Syscall-boundary governance with `seccomp` filters and Linux capability inspection.
 - **[`08-netlink-route-monitoring`](labs/08-netlink-route-monitoring/README.md)**: Kernel networking event monitoring with `AF_NETLINK` and `NETLINK_ROUTE`.
+- **[`09-io-uring-async-io`](labs/09-io-uring-async-io/README.md)**: Asynchronous I/O with `io_uring` submission and completion queues.
 
 ## How To Use This Repo
 
