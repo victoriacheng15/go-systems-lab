@@ -18,6 +18,7 @@ All projects are located in the `labs/` directory. Each module focuses on a spec
 - **[`08-netlink-route-monitoring`](labs/08-netlink-route-monitoring/README.md)**: Kernel networking event monitoring with `AF_NETLINK` and `NETLINK_ROUTE`.
 - **[`09-io-uring-async-io`](labs/09-io-uring-async-io/README.md)**: Asynchronous I/O with `io_uring` submission and completion queues.
 - **[`10-shared-memory-mmap`](labs/10-shared-memory-mmap/README.md)**: Shared memory IPC with file-backed `mmap` and `MAP_SHARED`.
+- **[`11-ebpf-xdp`](labs/11-ebpf-xdp/README.md)**: Programmable kernel packet handling with eBPF and XDP.
 
 ## How To Use This Repo
 
